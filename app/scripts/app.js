@@ -33,11 +33,12 @@ angular.module('vatValApp')
         $scope.valid = response.data.valid;
         $scope.name = response.data.company_name;
         $scope.address = response.data.company_address;
+        $scope.format = response.data.format_valid;
         // if response is not made information is not visible
         if (response.status) {
           document.querySelector(".info").style.display = 'block';
+          console.log(response);
         }
       });
     };
-    // show fetched information
   });
