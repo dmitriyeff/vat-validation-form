@@ -1,0 +1,31 @@
+
+  <h1>VAT validation</h1>
+  <form>
+    <div class="form-group">
+      <label for="vat">Enter VAT nr.:</label>
+      <input type="text" class="form-control" id="vat" placeholder="EE100247019" ng-model="data.vat_number" required>
+    </div>
+    <button type="submit" class="btn btn-success" ng-click="fetch()">Submit</button>
+
+    <div class="info">
+      <div class="alert alert-success" role="alert" ng-if="valid">
+        <ul>
+          <li>VAT number is valid</li>
+        </ul>
+      </div>
+      <div class="alert alert-danger" role="alert" ng-if="!valid">
+        <ul>
+          <li>VAT number is not valid</li>
+        </ul>
+      </div>
+      <div class="alert alert-info" role="alert" ng-if="valid">
+        <ul>
+          <li>Country code: {{country}}</li>
+          <li>VAT number: {{vat}}</li>
+          <li>Company name: {{name}}</li>
+          <li>Address: {{address}}</li>
+          <li>Request date: {{today}}</li>
+        </ul>
+      </div>
+    </div>
+  </form>
