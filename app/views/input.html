@@ -13,9 +13,14 @@
           <li>VAT number is valid</li>
         </ul>
       </div>
-      <div class="alert alert-danger" role="alert" ng-if="!valid">
+      <div class="alert alert-warning" role="alert" ng-if="!valid && format">
         <ul>
           <li>VAT number is not valid</li>
+        </ul>
+      </div>
+      <div class="alert alert-danger" role="alert" ng-if="!format">
+        <ul>
+          <li>Format is not valid</li>
         </ul>
       </div>
       <div class="alert alert-info" role="alert" ng-if="valid">
