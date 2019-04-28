@@ -19,7 +19,8 @@ Launch VAT validation app by typing:
 ```
 $ gulp watch
 ```
-## Example
+## Request examples
+<img src="img/vat-validation-form.png" width="400">
 
 ## License
 
