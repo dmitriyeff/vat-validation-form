@@ -15,7 +15,11 @@ $ git clone https://github.com/dmitriyeff/vat-validation-form.git
 Check if you've previously installed gulp globally, run ```$ npm rm --global gulp``` in your terminal. Check for node, npm, and npx. If they are not installed, follow the instructions [here](https://nodejs.org/en/).
 To install the gulp command line utility run ```$ npm install --global gulp-cli```.
 
-Launch VAT validation app in your browser by typing:
+Launch VAT validation app by typing:
 ```
 $ gulp watch
 ```
+## License
+
+```vat-validation-form``` is a public work, dedicated using [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Feel free to do whatever you want with it.
+
