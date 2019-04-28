@@ -11,18 +11,20 @@ angular.module('vatValApp')
     let mm = today.getMonth()+1; //January is 0!
     let yyyy = today.getFullYear();
 
-    if(dd<10) {
-    dd = '0'+dd
+    if (dd < 10) {
+    dd = '0' + dd
     }
 
-    if(mm<10) {
-        mm = '0'+mm
+    if (mm < 10) {
+        mm = '0' + mm
     }
 
     $scope.today = mm + '/' + dd + '/' + yyyy;
 
+    /* fetching data*/
+
     $scope.data={}; //point to an object.property
-    // send request on submit button click
+    // send request on submit button
     $scope.fetch = function() {
       $http({
         method: 'GET',
@@ -34,10 +36,9 @@ angular.module('vatValApp')
         $scope.name = response.data.company_name;
         $scope.address = response.data.company_address;
         $scope.format = response.data.format_valid;
-        // if response is not made information is not visible
+        // if response is not made information won't be visible
         if (response.status) {
           document.querySelector(".info").style.display = 'block';
-          console.log(response);
         }
       });
     };
