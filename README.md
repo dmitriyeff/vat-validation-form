@@ -19,6 +19,8 @@ Launch VAT validation app by typing:
 ```
 $ gulp watch
 ```
+## Example
+
 ## License
 
 ```vat-validation-form``` is a public work, dedicated using [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Feel free to do whatever you want with it.
