@@ -1,6 +1,6 @@
 # VAT validation form
 
-VAT validation form is a simple app that checks if entered vat number is valid. App written with Angular using Vatlayer API features. For spinning up a web server was used Gulp.
+VAT validation form is a simple app that checks if entered vat number is valid. An app is written with AngularJS using Vatlayer API features. For spinning up a web server was used Gulp.
 
 ## Installation
 
